@@ -9,16 +9,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  hello:
-    runs-on: windows
-    steps:
-      - uses: actions/checkout@v2
-      - name: hello world
-        run: echo "Hello World"
-        shell: bash
   goodbye:
     runs-on: ubuntu-latest
     steps:
-      - name: goodbye
-        run: echo "Good Bye!"
+      - name: HI
+        run: echo "HI THIS IS MAIN BRANCH WORKFLOW"
         shell: bash
