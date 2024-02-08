@@ -3,9 +3,9 @@ on:
   push:
     branches:
       -main
-  # pull_request:
-  #   branches:
-  #     -main
+  pull_request:
+    branches:
+      -main
   workflow_dispatch:
 
 jobs:
@@ -20,5 +20,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: goodbye
-        run: echo "Good Bye!"
+        run: echo "Hi THIS IS SAMPLE BRANCH WORKFLOW!"
         shell: bash
